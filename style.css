@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #181818;
+  font-family: 'Dongle', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 30px 60px;
+  border-radius: 10px;
+  background-color: #891ef5;
+}
+
+.search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  max-width: 300px;
+  width: 100%;
+  font-size: 22px;
+  border: none;
+  border-bottom: 2px solid #8f8f8f;
+  background: none;
+  outline: none;
+  color: #fff;
+}
+
+.search-box button {
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 17px;
+  border-radius: 10px;
+  background-color: #61e91d;
+  color: #fff;
+}
+
+.result-box .word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.result-box .word h3 {
+  color: #fff;
+  font-size: 36px;
+}
+
+.result-box .word button {
+  width: 100px;
+  background-color: transparent;
+  border: none;
+}
+
+.result-box .word button i {
+  cursor: pointer;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+}
+
+.result-box .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: rgba(255, 255, 255, 0.467);
+  font-size: 22px;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.result-box .description {
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.result-box .description .word-meaning {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.result-box .description .word-example {
+  position: relative;
+  margin-left: 15px;
+  font-size: 32px;
+}
+
+.result-box .description .word-example::before {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  content: '';
+  display: block;
+  width: 5px;
+  height: 100%;
+  background-color: #61e91d;
+}
+/*# sourceMappingURL=style.css.map */

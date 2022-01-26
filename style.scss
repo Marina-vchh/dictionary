@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+$backgroundColor: rgb(24, 24, 24);
+$backgroundColorContainer: rgb(137, 30, 245);
+$backgroundColorSearchButton: rgb(97, 233, 29);
+$fontColor:#fff;
+
+body{
+   background-color: $backgroundColor;
+   font-family: 'Dongle', sans-serif;
+}
+
+.container{
+   max-width: 600px;
+   width: 100%;
+   margin: 0 auto;
+   margin-top: 100px;
+   padding: 30px 60px;
+   border-radius: 10px;
+   background-color: $backgroundColorContainer;
+}
+.search-box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+      input{
+         max-width: 300px;
+         width: 100%;
+         font-size: 22px;
+         border: none;
+         border-bottom: 2px solid rgb(143, 143, 143);
+         background: none;
+         outline: none;
+         color: $fontColor;
+      }
+      button{
+         cursor: pointer;
+         border: none;
+         font-size: 20px;
+         font-weight: 700;
+         padding: 10px 17px;
+         border-radius: 10px;
+         background-color: $backgroundColorSearchButton;
+         color: $fontColor;
+   }
+}
+
+.result-box{
+   .word{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3{
+         color: $fontColor;
+         font-size: 36px;
+      }
+      button{
+         width: 100px;
+         background-color: transparent;
+         border: none;
+         i{
+            cursor: pointer;
+            text-align: center;
+            font-size: 26px;
+            color: $fontColor;
+         }
+      }
+   }
+
+   .details{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      color: rgba(255, 255, 255, 0.467);
+      font-size: 22px;
+      margin-bottom: 30px;
+      line-height: 1;
+   }
+
+   .description{
+      color: $fontColor;
+      margin-bottom: 30px;
+      font-weight: 300;
+      line-height: 1;
+      .word-meaning{
+         font-size: 34px;
+         margin-bottom: 15px;
+      }
+      .word-example{
+         position: relative;
+         margin-left: 15px;
+         font-size: 32px;
+         &::before{
+            position: absolute;
+            top: 0;
+            left: -15px;
+            content: '';
+            display: block;
+            width: 5px;
+            height: 100%;
+            background-color: $backgroundColorSearchButton;
+
+         }
+      }
+   }
+}
